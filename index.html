@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investment Growth Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Investment Growth Calculator</h1>
+    <label>Initial Amount</label>
+    <input type="number" id="initialmoney" />
+    
+    <label>Annual Rate (%): </label>
+    <input type="number" id="annualrate" oninput="updateRateValue(this.value); calculatetotal()"/>
+
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <label for="numyears">Years Invested For:</label>
+        <input type="range" id="numyears" min="1" max="100" step="1" value="10"
+             oninput="updateYearsValue(this.value); calculatetotal()">
+  <span id="yearsCounter">10</span>
+</div>
+
+
+    <div id="totalatend"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
