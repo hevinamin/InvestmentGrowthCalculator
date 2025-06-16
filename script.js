@@ -68,7 +68,7 @@ function updateChart(data) {
             data: {
                 labels,
                 datasets: [
-                    { label: 'Principal', data: principalData, backgroundColor: '#22543D' },
+                    { label: 'Total Invested', data: principalData, backgroundColor: '#22543D' },
                     { label: 'Growth', data: growthData, backgroundColor: '#68D391' }
                 ]
             },
